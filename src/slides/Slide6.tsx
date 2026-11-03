@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useReducedMotion, useSpring, useTransform, type MotionValue } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import { FOTOS, LOGO } from '../assets'
+import { FOCUS, FOTOS, LOGO } from '../assets'
 import { SafeImage } from '../components/SafeImage'
 import { STAGE_H, STAGE_W } from '../components/Stage'
 
@@ -94,7 +94,12 @@ function Polaroid({ p, mx, my, reduce }: { p: Layout; mx: MotionValue<number>; m
           transition={{ delay: p.delay + 1.6, duration: p.floatDur, repeat: Infinity, ease: 'easeInOut' }}
         >
           {p.src ? (
-            <SafeImage src={p.src} alt="Embajadores Tec" className="block h-full w-full" />
+            <SafeImage
+              src={p.src}
+              alt="Embajadores Tec"
+              className="block h-full w-full"
+              style={{ objectPosition: FOCUS[p.src] ?? 'center' }}
+            />
           ) : (
             <div
               aria-hidden

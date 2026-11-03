@@ -108,7 +108,7 @@ export default function App() {
             </motion.section>
           </AnimatePresence>
         </Stage>
-        <Controls index={index} total={TOTAL} idle={idle} isFullscreen={isFullscreen} onToggleFullscreen={toggle} />
+        <Controls index={index} total={TOTAL} idle={idle} isFullscreen={isFullscreen} onToggleFullscreen={toggle} onGo={go} />
       </div>
     </MotionConfig>
   )
