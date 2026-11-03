@@ -9,8 +9,8 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "fotos": "node scripts/import-fotos.mjs",
-    "deploy": "npm run build && wrangler deploy",
-    "preview:cf": "npm run build && wrangler dev"
+    "deploy": "wrangler deploy",
+    "preview:cf": "wrangler dev"
   },
   "dependencies": {
     "framer-motion": "^14.9.0",

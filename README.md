@@ -17,7 +17,8 @@ Home / End = primera / última · F = pantalla completa.
 El proyecto está configurado como Worker con assets estáticos (`wrangler.jsonc`).
 
 **Opción A — Desde el dashboard (recomendada):** Workers & Pages → Create → Import a repository →
-elige este repo. Build command: `npm run build` · Deploy command: `npx wrangler deploy`.
+elige este repo. Deploy command: `npx wrangler deploy` (el build lo corre Wrangler solo,
+configurado en `wrangler.jsonc`; el campo *Build command* puede quedar vacío).
 Cada push a `main` se publica automáticamente.
 
 **Opción B — Desde tu terminal:**
