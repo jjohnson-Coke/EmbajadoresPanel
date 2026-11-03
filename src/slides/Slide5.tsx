@@ -152,8 +152,10 @@ export function Slide5() {
           transition={{ delay: 3.3, duration: 1, ease }}
         >
           <p className="font-display text-[38px] font-extrabold leading-[1.18] text-blue-deep">
-            Con embajadores, coordinadores y un equipo nacional comprometidos y que aman lo que hacen,{' '}
-            <span className="text-blue-electric">el impacto en la meta y en los indicadores llega solo.</span>
+            Con Embajadores, Coordinadores y equipo nacional comprometidos y que aman lo que hacen,{' '}
+            <span className="text-blue-electric">
+              el impacto positivo en la meta y en los indicadores sucede por su propio peso.
+            </span>
           </p>
         </motion.blockquote>
       </div>

@@ -72,7 +72,7 @@ function Stool() {
           <g key={leg.id}>
             <motion.path
               d={leg.d}
-              stroke={isCoord ? '#2547FF' : '#232B5E'}
+              stroke="#232B5E"
               strokeWidth="20"
               strokeLinecap="round"
               fill="none"
