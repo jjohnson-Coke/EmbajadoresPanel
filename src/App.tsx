@@ -89,8 +89,7 @@ export default function App() {
           if (e.clientX > window.innerWidth / 2) step(1)
         }}
       >
-        <Stage>
-          <Background />
+        <Stage background={<Background />}>
           <AnimatePresence initial={false} custom={dir}>
             <motion.section
               key={index}

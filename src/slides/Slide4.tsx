@@ -70,7 +70,7 @@ const CARDS: CardDef[] = [
       <>
         <Bullet delay={b}>Creación del journey del coordinador</Bullet>
         <Bullet delay={b + 0.1}>Sesiones 1:1</Bullet>
-        <Bullet delay={b + 0.2}>Canal de escucha abierto 24/7</Bullet>
+        <Bullet delay={b + 0.2}>Escucha activa constante</Bullet>
         <Bullet delay={b + 0.3}>Programa de inducción para nuevas coordinadoras y coordinadores</Bullet>
       </>
     ),

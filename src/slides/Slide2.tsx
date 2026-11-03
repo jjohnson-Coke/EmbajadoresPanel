@@ -67,7 +67,6 @@ function Stool() {
 
       {/* Patas, dibujadas en secuencia */}
       {LEGS.map((leg) => {
-        const isCoord = leg.id === 'coord'
         return (
           <g key={leg.id}>
             <motion.path
@@ -87,7 +86,7 @@ function Stool() {
               className="font-sans"
               fontSize="27"
               fontWeight={600}
-              fill={isCoord ? '#2547FF' : '#1B4170'}
+              fill="#1B4170"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: leg.delay + 0.45, duration: 0.5, ease }}

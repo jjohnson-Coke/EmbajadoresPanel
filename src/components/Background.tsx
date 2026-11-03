@@ -20,14 +20,14 @@ export function Background() {
           style={{
             left: b.x,
             top: b.y,
-            width: b.size,
-            height: b.size,
+            width: `${(b.size / 1920) * 100}vmax`,
+            height: `${(b.size / 1920) * 100}vmax`,
             background: b.color,
             opacity: b.color === '#9BB0FF' ? 0.35 : 0.75,
-            filter: 'blur(110px)',
+            filter: 'blur(min(110px, 6vmax))',
             willChange: 'transform',
           }}
-          animate={reduce ? undefined : { x: b.dx, y: b.dy, scale: [1, 1.12, 0.94, 1] }}
+          animate={reduce ? undefined : { x: b.dx.map((v) => `${(v / 1920) * 100}vmax`), y: b.dy.map((v) => `${(v / 1920) * 100}vmax`), scale: [1, 1.12, 0.94, 1] }}
           transition={{ duration: b.d, repeat: Infinity, ease: 'easeInOut' }}
         />
       ))}
